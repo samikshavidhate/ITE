@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Source Code</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="nav">
+<a href="index.html">Intro</a>
+<a href="code.html">Source Code</a>
+<a href="output.html">Code Output</a>
+<a href="certificates.html">Certificates</a>
+<a href="ssc_hsc.html">SSC / HSC</a>
+</nav>
+<main class="container">
+<h1>HTML & CSS Code </h1>
+
+
+<h2>index.html</h2>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;
+  &lt;title&gt;Short HTML: Table, Image &amp; Google&lt;/title&gt;
+  &lt;style&gt;
+    body { font-family: Arial, Helvetica, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+    img { max-width: 100%; height: auto; border-radius: 8px; display: block; margin-bottom: 12px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background:#f4f4f4; }
+    .btn { display: inline-block; margin-top: 12px; padding: 8px 12px; background: #1a73e8; color: #fff; text-decoration: none; border-radius: 6px; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Demo: Table, Image &amp; Google Shortcut&lt;/h1&gt;
+
+  &lt;!-- Replace the src below with your image URL --&gt;
+  &lt;img src="https://via.placeholder.com/600x300?text=Replace+with+your+image" alt="Sample image"&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Item&lt;/th&gt;
+        &lt;th&gt;Quantity&lt;/th&gt;
+        &lt;th&gt;Price&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Apples&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;$2.50&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Bananas&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;$1.75&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;!-- "Google browser short one" — opens Google in a new tab --&gt;
+  &lt;a class="btn" href="https://www.google.com" target="_blank" rel="noopener"&gt;Open Google&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+
+<h2>index css.html</h2>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Basic Styling&lt;/title&gt;
+
+    &lt;style&gt;
+        body {
+            background-color: #008080;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.5;
+            font-size: 30px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        button {
+            background-color: green;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #ddd;
+            width: 300px;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: auto;
+        }
+
+        table, th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #eee;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Name: Samiksha Vidhate&lt;/h1&gt;
+
+    &lt;a href="https://www.flipkart.com/"&gt;Flipkart&lt;/a&gt; |
+    &lt;a href="https://www.amazon.com/"&gt;Amazon&lt;/a&gt;
+
+    &lt;br&gt;&lt;br&gt;
+
+    &lt;button&gt;Click&lt;/button&gt;
+    &lt;a href="https://sanjivani.org.in"&gt;Sanjivani&lt;/a&gt;
+
+    &lt;div class="box"&gt;
+        &lt;h3&gt;Styled Box&lt;/h3&gt;
+        &lt;p&gt;This is a simple styled div box.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;img src="samiksha.jpg" alt="Image"&gt;
+
+    &lt;br&gt;&lt;br&gt;
+
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Roll No.&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;Blood Group&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Samiksha&lt;/td&gt;
+            &lt;td&gt;013&lt;/td&gt;
+            &lt;td&gt;18&lt;/td&gt;
+            &lt;td&gt;O+&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Aliba&lt;/td&gt;
+            &lt;td&gt;07&lt;/td&gt;
+            &lt;td&gt;18&lt;/td&gt;
+            &lt;td&gt;O+&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Tanuja&lt;/td&gt;
+            &lt;td&gt;054&lt;/td&gt;
+            &lt;td&gt;18&lt;/td&gt;
+            &lt;td&gt;B+&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+    &lt;br&gt;&lt;br&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;Apple&lt;/li&gt;
+        &lt;li&gt;Orange&lt;/li&gt;
+        &lt;li&gt;Mango&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;ol&gt;
+        &lt;li&gt;Mango&lt;/li&gt;
+        &lt;li&gt;Apple&lt;/li&gt;
+        &lt;li&gt;Orange&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;br&gt;
+    H&lt;sub&gt;2&lt;/sub&gt;O
+
+    &lt;br&gt;&lt;br&gt;
+
+    x&lt;sup&gt;2&lt;/sup&gt; + 2x + 3
+
+    &lt;p style="color: red;"&gt;My Information&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</main>
+</body>
+</html>
