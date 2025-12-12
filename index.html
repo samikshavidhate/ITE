@@ -1,40 +1,105 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ITE - Intro</title>
-    <link rel="stylesheet" href="styles.css">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ITE - Intro</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <main class="container">
-        <h1>Welcome to My ITE Project Site</h1>
-        <ul>
-            <li>Name :- Vidhate Samiksha Pramod </li>
-            <li>Roll No. :- 13 </li>
-            <li>Division :- L </li>
-            <li>Department :- Electrical Engineering </li>
-        </ul>
+  <div class="container">
+    <header class="header">
+      <a class="brand" href="index.html">
+        <div class="logo">IT</div>
+        <div>
+          <h1>ITE Project</h1>
+          <div style="font-size:12px;color:#6b7280">1st year B.Tech — Project</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="code.html">Source Code</a>
+        <a href="output.html">Output</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="ssc_hsc.html">SSC / HSC</a>
+      </nav>
+    </header>
+
+    <section class="hero" role="banner">
+      <div>
+        <h2>Welcome to My ITE Project Site</h2>
+        <p>
+          This website is a short presentation of my ITE assignment — it has an intro, source code
+          view, rendered output, and certificate pages. Use the links to check each page or download the code.
+        </p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="output.html">View Output</a>
+          <a class="btn btn-ghost" href="code.html">View Source</a>
+        </div>
+
+        <div class="grid" style="margin-top:16px;">
+          <div class="card">
+            <h4>About</h4>
+            <p><strong>Name :</strong> Vidhate Samiksha Pramod<br><strong>Roll No :</strong> 13<br><strong>Dept :</strong> Electrical Engineering</p>
+          </div>
+          <div class="card">
+            <h4>Project</h4>
+            <p>Small multi-page site with HTML, CSS and images. Built for the ITE subject.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="profile-card" aria-label="Profile">
+        <img class="avatar" src="images/index_html_image.png" alt="Profile / Project image">
+        <h3>Samiksha Vidhate</h3>
+        <p>Electrical Engg — 1st Year</p>
+        <div style="margin-top:10px;display:flex;gap:8px;justify-content:center">
+          <a class="btn btn-primary" href="certificates.html">My Certificates</a>
+        </div>
+      </aside>
+    </section>
+
+<section style="margin-top:18px;">
+  <h3 style="margin-bottom:10px">Pages</h3>
+  <div class="grid">
+
+    <a href="index.html" class="card" style="text-decoration:none; color:inherit;">
+      <h4>Intro</h4>
+      <p>Overview and contact details.</p>
+    </a>
+
+    <a href="code.html" class="card" style="text-decoration:none; color:inherit;">
+      <h4>Source Code</h4>
+      <p>View the HTML & CSS code used for the project.</p>
+    </a>
+
+    <a href="output.html" class="card" style="text-decoration:none; color:inherit;">
+      <h4>Output</h4>
+      <p>Rendered output — what the code looks like live.</p>
+    </a>
+
+    <a href="certificates.html" class="card" style="text-decoration:none; color:inherit;">
+      <h4>Certificates</h4>
+      <p>College certificates gallery.</p>
+    </a>
+
+    <a href="ssc_hsc.html" class="card" style="text-decoration:none; color:inherit;">
+      <h4>SSC / HSC</h4>
+      <p>Your school certificates page.</p>
+    </a>
+
+  </div>
+</section>
 
 
-        <section>
-            <h2>Pages</h2>
-            <ul>
-                <li><a href="index.html">Intro</a></li>
-                <li><a href="code.html">Source Code</a></li>
-                <li><a href="output.html">Code Output</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="ssc_hsc.html">SSC / HSC</a></li>
-            </ul>
-        </section>
-    </main>
-
-
+    <footer class="site-footer" role="contentinfo">
+      <p>Created by <strong>Samiksha Vidhate</strong> — ITE project</p>
+      <p style="font-size:13px;color:#9ca3af">Made with ❤️ • <span style="color:var(--accent)">Pink</span> theme</p>
+    </footer>
+  </div>
 
 </body>
-
 </html>

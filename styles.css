@@ -1,34 +1,127 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: pink;
+/* styles.css — modern, responsive, clean */
+
+/* Reset & base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root{
+  --bg: #fff6fb;
+  --card: #ffffff;
+  --muted: #55606a;
+  --accent: #ff6fb5; /* pinkish accent */
+  --accent-2: #3b82f6;
+  --glass: rgba(255,255,255,0.75);
+  --radius: 14px;
+  --maxw: 1100px;
+  --shadow: 0 8px 24px rgba(16,24,40,0.06);
+  --mono: "Inter", Arial, sans-serif;
 }
 
-.nav {
-    background: #333;
-    padding: 10px;
-}
+html,body { height:100%; font-family: var(--mono); background: linear-gradient(180deg, #fff6fb 0%, #fffaf6 100%); color:#0f1724; }
 
-.nav a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-}
-
-.nav a:hover {
-    background: #555;
-    border-radius: 6px;
-}
-
+/* Page container */
 .container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 10px;
+  max-width: var(--maxw);
+  margin: 36px auto;
+  padding: 0 20px;
 }
 
+/* Header / nav */
+.header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color: #111827;
+}
+.brand .logo {
+  width:48px; height:48px; border-radius:10px;
+  background: linear-gradient(135deg,var(--accent), #f9a8d4);
+  display:flex; align-items:center; justify-content:center;
+  color:white; font-weight:700; box-shadow: 0 6px 20px rgba(203,48,127,0.12);
+}
+.brand h1 { font-size:20px; font-weight:700; letter-spacing: -0.4px; }
+
+/* nav */
+.nav {
+  display:flex; gap:10px; align-items:center;
+}
+.nav a {
+  text-decoration:none; padding:8px 12px; border-radius:10px;
+  color:#0f1724; font-weight:600; font-size:14px;
+}
+.nav a:hover { background: rgba(15,23,36,0.04); color: var(--accent-2); }
+
+/* Hero */
+.hero {
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.35));
+  border-radius: var(--radius);
+  padding: 28px;
+  display:grid;
+  grid-template-columns: 1fr 320px;
+  gap:20px;
+  box-shadow: var(--shadow);
+  align-items:center;
+}
+.hero h2 { font-size:34px; margin-bottom:8px; color:#0b1220; }
+.hero p { color:var(--muted); line-height:1.5; }
+.hero .cta { margin-top:12px; display:flex; gap:8px; }
+.btn {
+  display:inline-block; text-decoration:none; padding:10px 14px; border-radius:10px;
+  font-weight:700; font-size:14px;
+}
+.btn-primary { background: linear-gradient(90deg,var(--accent), #ff8acb); color:white; box-shadow: 0 6px 18px rgba(219,39,119,0.12); }
+.btn-ghost { border:1px solid rgba(12,18,30,0.06); background:transparent; color:#0f1724; }
+
+/* Right column card */
+.profile-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), var(--card));
+  padding:16px; border-radius:12px; text-align:center; box-shadow: 0 8px 20px rgba(15,23,36,0.04);
+}
+.profile-card img.avatar { width:96px; height:96px; border-radius:12px; object-fit:cover; margin-bottom:10px; }
+.profile-card h3 { margin-bottom:6px; font-size:18px; }
+.profile-card p { color:var(--muted); font-size:14px; }
+
+/* Main section with cards */
+.grid {
+  margin-top:20px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:16px;
+}
 .card {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background:var(--card);
+  border-radius:12px;
+  padding:14px;
+  box-shadow: var(--shadow);
+}
+.card h4 { margin-bottom:8px; font-size:16px; }
+.card p { color:var(--muted); font-size:14px; line-height:1.45; }
+
+/* Certificates gallery */
+.gallery { display:flex; gap:12px; flex-wrap:wrap; margin-top:12px; }
+.gallery figure { width: 150px; background:var(--glass); padding:8px; border-radius:10px; text-align:center; }
+.gallery img { max-width:100%; border-radius:6px; display:block; }
+
+/* Footer */
+footer.site-footer {
+  margin-top:28px;
+  padding:18px; border-radius:12px; background:linear-gradient(180deg, rgba(0,0,0,0.03), rgba(255,255,255,0.02));
+  display:flex; justify-content:space-between; align-items:center;
+}
+.site-footer p { color:var(--muted); font-size:14px; }
+
+/* Responsive */
+@media (max-width:880px){
+  .hero { grid-template-columns:1fr; }
+  .profile-card { order: -1; margin-bottom:8px; }
+}
+@media (max-width:420px){
+  .brand h1{ font-size:16px; }
+  .hero h2{ font-size:22px; }
 }
